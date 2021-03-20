@@ -1,0 +1,23 @@
+{
+  "name": "Voice Deepfake Detection",
+  "description": "VDF Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab","contextMenus", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Voice Deep Fake Detection",
+    "default_icon": {
+      "16": "/images/voice16.png",
+      "32": "/images/voice32.png",
+      "48": "/images/voice48.png",
+      "128": "/images/voice128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/voice16.png",
+    "32": "/images/voice32.png",
+    "48": "/images/voice48.png",
+    "128": "/images/voice128.png"
+  }
+ }
