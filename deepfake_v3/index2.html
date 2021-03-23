@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="popup_css.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Upload Files</title>
+  </head>
+
+  <body >
+    <div style=""background-image: url('images/voice128.png');" class="container">
+      <h2>Please Upload Audio File</h2>
+      <h1>You can upload more than one file</h1>
+      <form method="post" enctype="multipart/form-data">
+         <div class="fields">
+         <span>
+         <input type="file" name="files[]" multiple />
+         </span>
+         <br />
+         <span>
+         <div class="submit">
+           <input class="submit" type="submit" value="Submit" name="submit" />
+         </span>
+      </form>
+    </div>
+    <script src="upload.js"></script>
+  </body>
+</html>

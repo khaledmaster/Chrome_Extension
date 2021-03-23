@@ -1,0 +1,40 @@
+{
+  "name": "Voice Deepfake Detection",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+ // "background": {
+ //   "service_worker": "background.js"
+//  },
+  "permissions": ["storage", "activeTab","contextMenus", "scripting"],
+"content_scripts": [
+ {
+    "matches": [
+            "http://*/*",
+		 "file://*",
+            "https://*/*"
+     ],
+  //  	 "css": ["core.css"],
+    		 "js": ["contentScript.js"]
+ }
+],
+
+  "action": {
+    "default_popup": "index2.html",
+    "default_title": "Voice Deep Fake Detection",
+    "default_icon": {
+      "16": "/images/vdfd16.png",
+      "32": "/images/vdfd32.png",
+      "48": "/images/vdfd48.png",
+      "128": "/images/vdfd128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/vdfd16.png",
+    "32": "/images/vdfd32.png",
+    "48": "/images/vdfd48.png",
+    "128": "/images/vdfd128.png"
+  }
+ // "options_page": "options.html"
+
+}
